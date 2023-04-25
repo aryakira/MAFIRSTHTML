@@ -1,0 +1,182 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root {
+    --main-bg: #7612d3;
+    --secondary-bg: brown;
+    --icons-bg-primary: tomato;
+}
+
+.logo {
+    background-color: #7612d3;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--main-bg);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid rgb(216, 204, 204);
+    background-color: rgb(216, 204, 204);
+    color: black;
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.icons {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 30px;
+    color: var(--icons-bg-primary);
+}
+
+.title {
+    font-size: 2em;
+}
+
+.description {
+    font-size: .8em;
+}
+
+.img-foto {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.parallax {
+    background-image: url('Assets/foto/ddhhr82-eeb663c2-b6ce-4219-b13e-e4b622bcd356.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1A2238;
+    font-size: 18px;
+    color: white;
+    padding: 40px;
+}
+
+.mt-10 {
+    margin-top: 20px;
+}
+
+.hobi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-item {
+    text-align: center;
+    margin: 10px;
+    width: 20%;
+    background: rgb(190, 182, 182);
+    color: white;
+    padding: 25px;
+    box-shadow: 5px 2px 5px 2px black;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: rgb(216, 204, 204);
+}
+
+.btn:hover {
+    background-color: #7612d3
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #1A2238;
+    color: white;
+}
+
+@media screen and (max-width: 476px) {
+    .card {
+        width: 95%;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .icons {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 16px;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hobi {
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 100%;
+        gap: 0;
+    }
+
+    .parallax {
+        width: 100%;
+        padding: 0;
+    }
+
+    .img-foto {
+        width: 100%;
+    }
+
+
+}
